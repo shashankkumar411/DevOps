@@ -5,4 +5,7 @@ public with sharing class Demo {
     public Add(){
 
     }
+    public Sub(){
+
+    }
 }
