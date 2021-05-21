@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title ="My first lightning component" icon-name=" custom:custom -4">
+        <lightning-layout vertical-align="center"></lightning-layout>
+        <lightning-layout-item padding="around-small">
+          <lightning-formatted-text value={name}>
+            <lightning-layout-item padding="around-small">
+                <lightning-formatted-text value={title}></lightning-formatted-text>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <lightning-formatted-email value={email}></lightning-formatted-email>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <lightning-formatted-phone value={phone}></lightning-formatted-phone>
+            </lightning-layout-item>
+          </lightning-formatted-text> 
+        </lightning-layout-item>
+        <lightning-layout vertical-align="center">
+         <lightning-layout-item padding="around-small">  
+             <lightning-button label="call js" variant="brand" onclick={handleclick}></lightning-button>
+         </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+     </template>
+    
+</template>
