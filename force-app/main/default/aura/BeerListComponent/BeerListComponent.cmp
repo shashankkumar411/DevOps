@@ -1,0 +1,29 @@
+<aura:component >
+    <aura:attribute name="recordList" type="Object" />
+  <div>
+  
+        
+      
+    
+      
+      <div class="slds-grid slds-wrap">
+
+
+
+       <aura:iteration items="{!v.recordList}" var="item"> 
+           <div class="slds-col slds-size_1-of-4 slds-p-around_x-small">
+
+       
+               
+                 <lightning:card  title="{!item.Name}" footer="{!item.Id}"  iconName="custom:custom7">
+           <p class="slds-p-horizontal_small">
+               {!item.Id}  &nbsp;&nbsp;{!item.Name}   <br/>
+         </p>
+           </lightning:card>
+          
+              
+</div>
+          </aura:iteration>
+           </div>         
+    </div>              
+</aura:component>

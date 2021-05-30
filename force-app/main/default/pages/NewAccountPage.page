@@ -1,0 +1,45 @@
+<apex:page standardController="Account" tabStyle="Contact">
+
+    <apex:form >
+
+        <apex:pageblock >
+
+            <apex:pageblockButtons >
+
+                <apex:commandButton value="Save" title="Click to Save" action="{!save}"/>           
+
+             <apex:commandButton value="Cancel" title="Click to cancel" action="{!cancel}"/>
+
+            </apex:pageblockButtons>
+
+           
+
+            <apex:pageblockSection title="Account Information" collapsible="false">
+
+                <apex:inputField value="{!Account.Name}" />
+
+                <apex:inputField value="{!Account.Type}" />
+
+                <apex:inputField value="{!Account.Rating}" />
+
+                <apex:inputField value="{!Account.SLAExpirationDate__c}" />
+
+            </apex:pageblockSection>
+
+            <apex:pageblockSection title="Account Address" collapsible="false">
+
+                <apex:inputField value="{!Account.Phone}" />
+
+                <apex:inputField value="{!Account.Website}" />
+
+                <apex:inputField value="{!Account.NumberofLocations__c}" />
+
+               
+
+            </apex:pageblockSection>
+
+        </apex:pageblock>
+
+    </apex:form>
+
+</apex:page>

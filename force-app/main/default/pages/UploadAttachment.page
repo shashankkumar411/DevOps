@@ -1,0 +1,28 @@
+<apex:page standardController="Contact">
+<apex:sectionHeader title="Manage Attachment"/>
+<apex:form >
+ <apex:pageBlock mode="detail">
+    <apex:pageBlockSection title="Contact Details">
+       <apex:outputField value="{!contact.Salutation}"/>
+       <apex:outputField value="{!contact.FirstName}"/>
+       <apex:outputField value="{!contact.LastName}"/>
+       
+    
+    </apex:pageBlockSection>
+    <apex:pageBlockSection title="Attachments">
+         <apex:pageBlockSectionItem >
+        <apex:pageblockTable value="{!Contact.Attachments}" var="attch">
+      
+          <apex:column HEADerValue="Action"/>
+           <apex:column value="{!attch.Name}"/>
+          <apex:column value="{!attch.Description}"/>
+         
+      </apex:pageBlockTable>
+    </apex:pageBlockSectionItem>
+    </apex:pageBlockSection>
+ 
+ 
+ 
+ </apex:pageBlock>
+ </apex:form>
+</apex:page>

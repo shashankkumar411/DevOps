@@ -1,0 +1,39 @@
+<apex:page >
+<apex:form >
+  <apex:actionFunction name="gotoHome" action="/apex/LoginHome1"/>
+</apex:form>  
+  <apex:pagemessage severity="CONFIRM" strength="1" summary="You have been registered successfully." />
+   <apex:outputPanel style="Margin-left : 200px" >
+  Please &nbsp;<apex:outputLink value="/apex/LoginHome1" > click here </apex:outputLink>to go to  home page or you will be redirect to home page automatically .
+    <h2 id ="CountDown"> </h2>
+  </apex:outputPanel>
+  <script>
+     startCountDown(10,1000,gotoHome);
+     function startCountDown(i,p,f){
+     var pause= p;
+     var fn= f;
+     var countDownObj= document.getElementById("CountDown");
+       if(countDownObj == null) {
+         alert('Element not found');
+         return;
+         }
+      countDownObj.count =function(i) {
+      countDownObj.innerHTML = i + 'seconds' ;
+       if(i==0)
+       {
+       fn();
+       return;
+       }
+       setTimeout(function()
+       { 
+       countDownObj.count(i-1);
+       },
+       pause
+       );
+       }
+       countDownObj.count(i);
+       }
+       
+      
+  </script>
+</apex:page>

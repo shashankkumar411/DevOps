@@ -1,14 +1,8 @@
 public with sharing class ContactManager {
     @AuraEnabled(cacheable = true)
-    public static list<Contact> fetchAllContactsRecords(string accountId ){
-        if(string.isNotBlank(accountId)){
-        List<Contact> conlist = [SELECT Id,NAME,Phone,Email,Account.Name FROM Contact WHERE AccountId =:accountId];
+    public static list<Contact> fetchAllContactsRecords(){
+        List<Contact> conlist = [SELECT Id,NAME,Phone,Email,Account.Name FROM Contact ];
         return conlist;
-
-        }
-        else{
-            return NULL;
-        }
     }
     @AuraEnabled(cacheable= true)
     public static List<Account> getAllAccount(){

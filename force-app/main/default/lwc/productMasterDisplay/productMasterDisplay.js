@@ -12,4 +12,4 @@ export default class ProductMasterDisplay extends LightningElement {
               this.errorDetails=error;
         }
     }
-} 
+}

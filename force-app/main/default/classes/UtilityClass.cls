@@ -18,10 +18,4 @@ public with sharing class UtilityClass {
             return 'test string';
         }
     
-@AuraEnabled
-        public static string commit1() {
-            return 'test string';
-        }
-    
 }
-

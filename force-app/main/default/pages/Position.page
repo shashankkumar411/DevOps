@@ -1,0 +1,26 @@
+<apex:page showHeader="true" setup="false" sidebar="false" tabStyle="Lead" >
+<apex:SectionHeader title="Position Edit" subtitle="New Position"/>
+<apex:form >
+    <apex:pageBlock title="Position PageBlock">
+         <apex:pageBlockButtons location="Both">
+             <apex:commandButton value="Save"/>
+             <apex:commandButton value="Delete"/>
+             <apex:commandButton value="Cancel"/>
+             <apex:commandButton value="Search"/>
+
+         </apex:pageBlockButtons> 
+         <apex:pageBlockSection title="Position Information" columns="2" collapsible="true" >         
+         </apex:pageBlockSection>
+         <apex:pageBlockSection title="Milestone details" columns="2" collapsible="true">
+         </apex:pageBlockSection>
+         <apex:pageBlockSection title="Compensation details" columns="2" collapsible="true">
+         </apex:pageBlockSection>
+         <apex:pageblockSection title="Additional Information" columns="2" collapsible="true">
+        </apex:pageblockSection>
+        
+         <apex:pageblockSection title="Position Description Section" columns="2" collapsible="true">
+        </apex:pageblockSection>
+
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

@@ -1,0 +1,44 @@
+<apex:page standardController="Employee__c"  recordSetVar="employees" extensions="StdLstControlExten">
+<apex:form >
+ <apex:pageBlock title="Standard List Conttroller">
+    
+    <apex:pageBlockSection title="Employee Records" columns="1">
+      
+      <apex:pageblockTable value="{!employees}" var="emp">
+      <apex:column >
+         <apex:commandLink value="{!emp.name}" >
+         <apex:param name="empid"  value="{!emp.id}"/>
+                 
+          </apex:commandLink>
+           </apex:column>
+
+                    <apex:Column value="{!emp.Name__c}"/>
+          <apex:Column value="{!emp.Salary__c}"/>
+          <apex:Column value="{!emp.City__c}"/>
+          
+
+
+          
+
+      </apex:pageblockTable>
+      <apex:panelGrid columns="4">
+            <apex:commandButton value="First" action="{!first}" disabled="{!hasPrevious}"/>
+            <apex:commandButton value="Previous" action="{!previous}" disabled="{!hasPrevious}"/>
+            <apex:commandButton value="Next" action="{!next}" />
+            <apex:commandButton value="Last" action="{!last}"/>
+      
+      </apex:panelGrid>
+    
+    
+    
+    </apex:pageBlockSection>
+ 
+
+ </apex:pageBlock>
+ 
+ 
+ 
+ 
+
+ </apex:form>
+</apex:page>

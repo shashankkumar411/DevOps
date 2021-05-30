@@ -1,0 +1,17 @@
+<aura:component >
+	<!-- public String whom='SFDC Ryder'
+ ;
+   public Contact Contactobj;
+ -->
+    <!-- Same thing in aura -->
+    <aura:attribute name ="whom" type= "String" default ="SFDC Ryder" access="public" />
+    <aura:attribute name="Age"  type="Integer" default="0" access = "private" />
+    <aura:attribute name="ColorsArray"  type="String[]" default="['red' ,'green','blue']" access = "public" />
+     <aura:attribute name="ColorsList"  type="List" default="['red' ,'green','blue']" access = "public" />
+     <aura:attribute name="ColorsSet"  type="Set" default="['red' ,'green','blue']" access = "public" />
+     <aura:attribute name="ColorsMap"  type="String[]" default="{ label1:'red' ,label2:'green',label3:'blue'}" access = "public" />
+     <aura:attribute name="ContactObj"  type="Contact" access = "public" />
+    
+    Welcome {!v.whom} , Age : {!v.Age} , color: {!v.ColorsArray[0]} <br/>
+    {!v.ColorsList[0]} , {!V.ColorsSet[0]} 
+</aura:component>

@@ -1,0 +1,15 @@
+<aura:component  controller="ContactListController">
+                            <aura:attribute name="accountId" type= "String" />                     
+    <aura:attribute name="CreateContact" type ="Contact" default="{ sobjectNmae : 'Contact',FirstName: '',LastName: '',Email: '',Phone: ''}"/>
+    
+    
+    <div class="slds-p-around_x-small">
+        <lightning:input type="text" value="{!v.CreateContact.FirstName}" label="First name" required= "true" />
+         <lightning:input type="text" value="{!v.CreateContact.LastName}" label="Last Name" required= "true" />
+         <lightning:input type="phone" value="{!v.CreateContact.Phone}" label="Email"  />
+         <lightning:input type="email" value="{!v.CreateContact.Email}" label="Phone" required= "true" />
+        <lightning:button label ="Create Contact" variant="brand" onClick="{c.doSave}"/>
+
+    </div>
+	
+</aura:component>

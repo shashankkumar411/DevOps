@@ -1,0 +1,18 @@
+<apex:page >
+  <apex:panelBar >
+    <apex:panelBarItem label="Item1"> Hellow how are you?</apex:panelBarItem>
+    <apex:panelbarItem label="Item2"> Welcome  </apex:panelbarItem>
+    <apex:panelBarItem label="Item3"> This is visualforce </apex:panelBarItem>
+    
+  
+  
+  
+  
+  </apex:panelBar>
+  
+  
+  
+  
+  
+  
+</apex:page>

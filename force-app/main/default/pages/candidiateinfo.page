@@ -1,0 +1,29 @@
+<apex:page standardController="Candidate__c" setup="false" sidebar="false" showHeader="true" tabStyle="Candidate__c">
+<apex:sectionHeader title="{!$ObjectType.Candidate__c.Label} Edit" subtitle="New  {!$ObjectType.Candidate__c.Label}"/>
+<apex:form >
+    <apex:pageBlock title="Candidate PageBlock">
+         <apex:pageBlockButtons title="Candidate Edit" location="both">
+             <apex:commandButton value="Save" action="{!Save}"/>
+             <apex:commandButton value="Cancel" action="{!Cancel}"/>
+             <apex:commandButton value="Delete" />
+
+
+         
+         </apex:pageBlockButtons>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </apex:pageBlock>
+
+
+
+
+</apex:form>
+  
+</apex:page>

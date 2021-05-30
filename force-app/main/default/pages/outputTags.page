@@ -1,0 +1,24 @@
+<apex:page >
+  <apex:form >
+   <apex:outputLabel value="Enter name"></apex:outputLabel>
+   <apex:inputText id="name"/> <br/><br/>
+   <apex:outputLabel value="Enter user name"> </apex:outputLabel>
+   <apex:inputtext id="username"/><br/><br/>
+   
+   <apex:outputLabel value="Password:" for="password"> </apex:outputLabel>
+     <apex:inputSecret id="password"/> <br/><br/>
+   
+   <apex:outputLink value="https://www.google.com/"> Salesforce</apex:outputLink>
+
+
+       
+ 
+ 
+
+   
+  
+   
+    
+  </apex:form>
+ 
+</apex:page>

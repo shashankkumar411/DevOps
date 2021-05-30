@@ -1,0 +1,20 @@
+<aura:component >
+    <ltng:require styles="{!$Resource.MyCustomCss}"/>
+                    
+
+	<div class="divclass"> Welcome to Lightning</div> 
+    <h2>This is header </h2>
+    <p> This is paragraph</p>
+    <ul>
+       <li class="red" >This is red  </li>
+        <li class="yellow"> Thisis yellow</li>
+        <li class="blue"> This is blue</li>
+    
+    </ul>
+    <ul>
+       <li >This is red  </li>
+        <li > Thisis yellow</li>
+        <li > This is blue</li>
+    
+    </ul>
+</aura:component>

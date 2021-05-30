@@ -1,0 +1,5 @@
+<apex:page sidebar="true" showHeader="true">
+<apex:pageMessage summary="Please validate details again" severity="confirm" strength="2"> 
+
+</apex:pageMessage>
+</apex:page>

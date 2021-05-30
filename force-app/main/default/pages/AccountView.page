@@ -1,0 +1,27 @@
+<apex:page standardController="Account" sidebar="false" showHeader="true" tabStyle="Account">
+<style>
+ .activeTab{
+    background-color:red;
+    color:red;
+ }
+ .InactiveTab{
+    background-color:yellow;
+    color:green;
+}
+</style>
+  <apex:tabPanel activeTabClass="activeTab" inactiveTabClass="InactiveTab" selectedTab="opptab">
+    <apex:tab label="Account Details"  > 
+     <apex:detail relatedList="false" id="accTab"/>
+    </apex:tab>
+    <apex:tab label="Contacts" > 
+    <apex:relatedList list="Contacts" id="contab"/>
+    </apex:tab> 
+    <apex:tab label="Opportunity">
+    <apex:relatedList list="Opportunities" id="opptab"/>
+     </apex:tab> 
+  
+
+ 
+  </apex:tabPanel>
+  
+ </apex:page>

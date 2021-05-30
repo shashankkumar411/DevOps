@@ -1,0 +1,6 @@
+<apex:page >
+  
+   
+      user is: {!$User.FirstName }
+    
+</apex:page>

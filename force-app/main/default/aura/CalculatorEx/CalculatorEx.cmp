@@ -1,0 +1,18 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	 <aura:attribute name="Number1" type="Integer"  default="10"/>
+     <aura:attribute name="Number2" type="Integer"  default="20"/>
+     <aura:attribute name="result" type="Integer"  default="30"/>
+    <div class="slds-box">
+    <lightning:input type="Integer" name="no1" label="Enter a number" required="true" value="{!v.Number1}"/>
+     <lightning:input type="Integer" name="no2" label="Enter a number" required="true" value="{!v.Number2}"/>
+      <lightning:buttonGroup>
+    <lightning:button variant="brand" label="Add" title="Add " onclick="{!c.add }" />
+     <lightning:button variant="brand" label="Sub" title="Sub" onclick="{!c.sub }" />
+     <lightning:button variant="brand" label="Mult" title="Mult" onclick="{!c.mult }" />
+     <lightning:button variant="brand" label="Div" title="Div" onclick="{!c.div }" />
+    </lightning:buttonGroup>
+        </div>
+      <div class="{v.result>0?'slds-box slds-theme_shade slds-theme_alert-texture positiveCls:'slds-box slds-theme_shade slds-theme_alert-texture negativeCls'}">
+    The  result is {!v.result}
+    </div>
+    </aura:component>

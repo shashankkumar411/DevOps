@@ -1,0 +1,7 @@
+<apex:page id="thePage">
+  <apex:tabPanel switchType="server">
+   <apex:tab label="Home" name="Home1" id="tabONE">Welcome to my tutoial</apex:tab>
+   <apex:tab label="Students " name="Student1" id="tab2">basic of salesforce</apex:tab>
+  </apex:tabPanel>
+  
+</apex:page>

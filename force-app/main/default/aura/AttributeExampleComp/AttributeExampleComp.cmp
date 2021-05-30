@@ -1,0 +1,11 @@
+<aura:component >
+     <aura:attribute name="cname" type="String"/>
+    <aura:attribute name="mstd" type="Integer"/>
+    <aura:attribute name="startdate" type="DateTime"/>
+    <aura:attribute name="fee" type="Double"/>
+  <lightning:input name="Course Name" label="Course Name" placeholder="Please enter course name " value="{!v.cname}"/>
+  <lightning:input type="String" name="MaxStud" label="No of student"  value="{!v.mstd}" />
+  <lightning:input type="DateTime" name="startdate" label="start date"  value="{!v.startdate}" />
+   <lightning:input type="Double" name="CourseFee" label="Course fee" value="{!v.fee}" />
+     The course {!v.cname} is going tostart on {!v.startdate}    having fee {!v.fee}                                                                      
+</aura:component>
